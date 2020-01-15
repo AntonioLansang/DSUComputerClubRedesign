@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/main_rwd.css">
+    <title>Homepage</title>
+
+
+    <!--Slicknav requirements-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="../CSS/slicknav.css">
+    <script src="../JS/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+
+
+    <!--JS File Links-->
+    <script src="../JS/ShowHideDiv.js"></script>
+
+
+</head>
+<body>
+
+<header>
+    <img src="../Images/DSU_Rebrand_TrojanLogo-Side_593x593.jpg"/>
+    <h2>DSU Computer Club</h2>
+    <h3>All meetings at 5:30 pm</h3>
+
+</header>
+
+
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="#">Computer Club</a>
+            <ul>
+                <li><a href="http://attendance.dsucomputer.club/">Attendance</a></li>
+                <li><a href="http://events.dsucomputer.club/">Events</a></li>
+            </ul>
+        </li>
+        <li><a href="#"> OffSec</a>
+            <ul>
+                <li><a href="http://attendance.offsec.club/">Attendance</a></li>
+                <li><a href="https://kernelpoppers.org/">Slack</a></li>
+                <li><a href="https://youtu.be/orDailWz_wc">YouTube</a></li>
+                <li><a href="resources.offsec.club">Resources</a></li>
+                <li><a href="ctf.offsec.club">CTF</a></li>
+            </ul>
+        </li>
+        <li><a href="#">DefSec</a>
+            <ul>
+                <li><a href="http://attendance.defsec.club/">Attendance</a></li>
+                <li><a href="https://kernelpoppers.org/">Slack</a></li>
+                <li><a href="http://youtube.defsec.club/">YouTube</a></li>
+                <li><a href="http://flash.defsec.club/">IA Lab</a></li>
+            </ul></li>
+        <li><a href="#">Programming Club</a>
+            <ul>
+            <li><a href="https://open.kattis.com/">Kattis</a></li>
+            <li><a href="http://progclub.ialab.dsu.edu/">Programming Club</a></li>
+
+            </ul></li>
+        <li><a href="#">Join Email</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="jdom">
+        <h1 class="News">Computer Club News</h1>
+        <div class="NewsContent">
+            <p>Capture the Flag competitions are competitions where a team tries to solve as many challenges as
+                they can within a specific timeframe to get as many points as possible.
+                Challenges can range from breaking out of odd shells to privilege escalation to binary reversing to steganography
+                with many more possibilities. Andrew Kramer (@rewzilla) will be walking through a CTF solution he's solved in the past.</p>
+        </div>
+
+
+        <h1 class="News">Offsec News</h1>
+        <div class="NewsContent">
+            <p>No meeting! Have a great Thanksgiving break!</p>
+
+        </div>
+
+
+        <h1 class="News">DefSec News</h1>
+        <div class="NewsContent">
+            <p>DefSec will be hosting a laid-back meeting for those who can make it.
+                We'll be discussing DefSec related projects.
+                We'll be walking through how the scoring engine works, possibilities for a Red Team Engine,
+                and if time permits, Ansible Mock Deployment Scripts.
+            </p>
+
+        </div>
+
+        <h1 class="News">Programming Club News</h1>
+        <div class="NewsContent">
+            <p>
+                No meeting! Have a great Thanksgiving break!
+            </p>
+
+        </div>
+
+    </section>
+
+    <aside>
+        <h1>Mock Upcoming Events</h1>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Defsec Mock</td>
+                <td>January 29</td>
+                <td>2-5am</td>
+            </tr>
+            <tr>
+                <td>Hackathon</td>
+                <td>January 29</td>
+                <td>8am-6pm</td>
+            </tr>
+            <tr>
+                <td>Something Something</td>
+                <td>April 20</td>
+                <td>6-9pm</td>
+            </tr>
+
+        </table>
+    </aside>
+
+
+
+</main>
+
+
+</body>
+
+
+
+<footer>
+    <p> 2019 Redesign by Antonio Lansang</p>
+    <p>
+
+        <a href="mailto:antonio.lansang@trojans.dsu.edu">
+            Contact Me
+        </a>
+    </p>
+</footer>
+</html>

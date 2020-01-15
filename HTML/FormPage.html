@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Club Email Sign-Up</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/main_rwd.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+    <script src="../JS/Email.js"></script>
+
+</head>
+
+
+
+<body>
+<header>
+    <img src="../Images/DSU_Rebrand_TrojanLogo-Side_593x593.jpg"/>
+    <h2>DSU Computer Club</h2>
+    <h3>All meetings at 5:30 pm</h3>
+
+</header>
+
+<!--Slicknav requirements-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="../CSS/slicknav.css">
+<script src="../JS/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    });
+</script>
+
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="#">Programming Club</a></li>
+        <li><a href="#"> OffSec</a></li>
+        <li><a href="#">DefSec</a>
+            <ul>
+                <li><a href="http://attendance.defsec.club/">Attendance</a></li>
+                <li><a href="#">Slack</a></li>
+                <li><a href="http://youtube.defsec.club/">YT Channel</a></li>
+                <li><a href="http://flash.defsec.club/">IA Lab</a></li>
+            </ul></li>
+        <li><a href="FormPage.html">Join Email</a></li>
+    </ul>
+</nav>
+
+<form action="ThankYou.html" method="get"
+      name="reservation_form" id="reservation_form">
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <span>*</span><br>
+        <label for="email">DSU Email:</label>
+        <input type="text" name="email" id="email">
+        <span>*</span><br>
+    </fieldset>
+    <input type="submit" id="submit" value="Join"><br>
+
+</form>
+</body>
+
+</html>
